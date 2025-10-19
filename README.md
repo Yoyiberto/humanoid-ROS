@@ -2,6 +2,10 @@
 
 Darwin-OP robot simulation in Gazebo using ROS1 Noetic on Ubuntu 20.04 WSL.
 
+<p align="center">
+  <img src="https://github.com/Yoyiberto/humanoid-ROS/blob/7772364973da9af2d3a4862e6a7574c88b1563f5/humanoid.gif" alt="Simulation GIF" width="60%">
+</p>
+
 ## Prerequisites
 
 - Windows with WSL2
