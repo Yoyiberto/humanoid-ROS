@@ -1,10 +1,22 @@
-# Darwin-OP Humanoid Robot Simulation
+# Advanced Humanoid Robot Control: Darwin-OP Simulation in ROS & Gazebo
 
-Darwin-OP robot simulation in Gazebo using ROS1 Noetic on Ubuntu 20.04 WSL.
+This project presents a comprehensive simulation of the Darwin-OP humanoid robot, built to demonstrate a complete robotics workflow within a realistic physics environment. Leveraging the power of the Robot Operating System (ROS) and the Gazebo simulator, this implementation showcases dynamic walking control, individual joint manipulation, and robust system integration.
+
+The robot's structure is defined using URDF and xacro for modularity, while its movements are managed by `ros_control` with `effort_controllers`, allowing for precise and stable motion. The entire environment is orchestrated using Python and Bash scripts, providing an interactive platform for control and testing.
+
 
 <p align="center">
   <img src="https://github.com/Yoyiberto/humanoid-ROS/blob/7772364973da9af2d3a4862e6a7574c88b1563f5/humanoid.gif" alt="Simulation GIF" width="60%">
 </p>
+
+## Core Technologies Used
+
+*   **Framework:** ROS1 Noetic
+*   **Simulation:** Gazebo
+*   **Robot Modeling:** URDF, Xacro
+*   **Control System:** `ros_control`, `effort_controllers`, `joint_state_controller`
+*   **Programming:** Python, Bash Scripting
+*   **Platform:** Ubuntu 20.04 on WSL2
 
 ## Prerequisites
 
@@ -94,7 +106,6 @@ rostopic pub /darwin/cmd_vel geometry_msgs/Twist '[1,0,0]' '[0,0,0]'
 - Wait for Gazebo physics engine to initialize
 - Look for "Loaded controllers:" message
 
-## Credits
+## Acknowledgments
 
-- Tutorial: [GenerationRobots Darwin-OP Tutorial](https://www.generationrobots.com/en/content/83-carry-out-simulations-and-make-your-darwin-op-walk-with-gazebo-and-ros)
-- Packages: [HumaRobotics Darwin repositories](https://github.com/HumaRobotics)
+- The foundational robot description, control, and Gazebo packages for the Darwin-OP were sourced from the [HumaRobotics GitHub repositories](https://github.com/HumaRobotics). This project builds upon their excellent work to demonstrate advanced simulation and control techniques.
