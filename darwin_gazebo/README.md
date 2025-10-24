@@ -5,14 +5,6 @@ Also provides a Python interface to the joints and some walk capabilities.
 
 These have been tested in simulation and need some work to be used on the real robot, do not use as-is.
 
-![Darwin model in Gazebo](/darwin.png?raw=true "Darwin model in Gazebo")
-
-## Tutorial
-
-A tutorial describing how to use this package can be found at:
-
-http://www.generationrobots.com/en/content/83-carry-out-simulations-and-make-your-darwin-op-walk-with-gazebo-and-ros
-
 ## Install
 
 Clone in your catkin workspace and catkin_make it.
@@ -92,6 +84,7 @@ The following ROS packages have to be installed:
 * gazebo_ros_control
 * hector_gazebo
 
-## License
+## Acknowledgments
 
-This software is provided by Génération Robots http://www.generationrobots.com and HumaRobotics http://www.humarobotics.com under the Simplified BSD license
+- The foundational robot description, control, and Gazebo packages for the Darwin-OP were sourced from the [HumaRobotics GitHub repositories](https://github.com/HumaRobotics). This project builds upon their excellent work to demonstrate advanced simulation and control techniques.
+Génération Robots is under the Simplified BSD license
